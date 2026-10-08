@@ -3,6 +3,8 @@ import { defineConfig } from 'vite'
 import viteReact from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import { nitro } from 'nitro/vite'
+import netlify from '@netlify/vite-plugin-tanstack-start'
+
 
 export default defineConfig({
   server: {
@@ -18,5 +20,6 @@ export default defineConfig({
     }),
     viteReact(),
     nitro(),
+    netlify(),
   ],
 })
